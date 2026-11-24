@@ -1,0 +1,42 @@
+:root {
+  --primaria: #5b2a86;
+  --primaria-clara: #f2ecf8;
+  --texto: #1d1d1f;
+  --texto-suave: #6b6b70;
+  --fundo: #ffffff;
+  --borda: #ececf0;
+  --verde: #1a8f4e;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--texto);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--fundo); }
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+
+.app { max-width: 480px; margin: 0 auto; min-height: 100vh; background: var(--fundo); }
+
+.header { background: var(--primaria); color: #fff; padding: 24px 20px 28px; }
+.header-top { display: flex; justify-content: space-between; align-items: center; }
+.avatar { width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,.18);
+  display: grid; place-items: center; font-weight: 700; }
+.icon-btn { font-size: 20px; padding: 8px; }
+.greeting { font-size: 18px; font-weight: 600; margin-top: 20px; }
+
+.card-section { padding: 22px 20px; border-bottom: 1px solid var(--borda); }
+.label { font-weight: 600; font-size: 17px; margin-bottom: 8px; }
+.sub { color: var(--texto-suave); font-size: 14px; margin-top: 4px; }
+.valor-grande { font-size: 24px; font-weight: 700; }
+.valor-medio { font-size: 20px; font-weight: 700; margin-top: 2px; }
+
+.acoes { display: flex; gap: 16px; overflow-x: auto; padding: 20px; scrollbar-width: none; border-bottom: 1px solid var(--borda); }
+.acao { display: flex; flex-direction: column; align-items: center; gap: 8px; min-width: 68px; }
+.acao-icone { width: 64px; height: 64px; border-radius: 50%; background: var(--primaria-clara);
+  display: grid; place-items: center; font-size: 22px; color: var(--primaria); }
+.acao-nome { font-size: 13px; font-weight: 500; }
+
+.extrato { list-style: none; }
+.extrato-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; }
+.extrato-item + .extrato-item { border-top: 1px solid var(--borda); }
+.extrato-desc { font-size: 15px; }
+.entrada { color: var(--verde); font-weight: 600; }
+.saida { font-weight: 600; }
